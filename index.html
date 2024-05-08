@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <h1>The RGB Colors</h1>
+
+    <p>
+      An RGB Color is specified by:
+      <span class="rgbText">rgb(red, green, blue)</span>
+    </p>
+
+    <p>
+      The parameters red, green and blue specify the intensity of the color: 0
+      (lowest) to 255 (highest)
+    </p>
+
+    <hr />
+
+    <h3>Try it out yourself...</h3>
+    <p>
+      Preview Width:
+      <input
+        id="widthIn"
+        type="number"
+        min="50"
+        max="400"
+        step="10"
+        value="400"
+      />
+      Preview Height:<input
+        id="heightIn"
+        type="number"
+        min="50"
+        max="200"
+        step="10"
+        value="200"
+      />
+    </p>
+    <p>
+      red:
+      <input
+        id="redIn"
+        class="redBG"
+        type="number"
+        value="0"
+        min="0"
+        max="255"
+        step="5"
+      />
+      green:
+      <input
+        id="greenIn"
+        class="greenBG"
+        type="number"
+        value="0"
+        min="0"
+        max="255"
+        step="5"
+      />
+      blue:
+      <input
+        id="blueIn"
+        class="blueBG"
+        type="number"
+        value="0"
+        min="0"
+        max="255"
+        step="5"
+      />
+    </p>
+
+    <!-- Color display area -->
+    <div id="display"></div>
+
+    <p id="rgbStrOut" class="rgbText">rgb(255,255,0)</p>
+
+    <hr />
+
+    <p class="newFont">
+      <a href="https://en.wikipedia.org/wiki/RGB_color_model" target="_blank"
+        >Learn more</a
+      >
+      about RGB colours on Wikipedia
+    </p>
+  </body>
+</html>
